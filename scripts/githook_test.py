@@ -5,8 +5,12 @@
 import subprocess,
        humanhash;
 
-       
 
+# print last commit in git
+print "Last commit in Git:"
+print humanhash.humanize(
+    subprocess.check_output(['git','rev-parse','HEAD'])
+    )
 
 
 
