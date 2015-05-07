@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script to use to edit message before applying commits to Git Repository
+
+
+# Will contain prepare-commit-msg for server-side-hooks
