@@ -31,10 +31,12 @@
 
 #   *) ;;
 # esac
+
+# echo commit message  
+
 echo_message = "Updated file in the Repository"
+echo $echo_message
 SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
-print "$SOB" >> "$1"
-print "$echo_message" >> "$1"
 grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
 
 
