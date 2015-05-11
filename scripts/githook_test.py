@@ -12,6 +12,7 @@ print humanhash.humanize(
     subprocess.check_output(['git','rev-parse','HEAD'])
     )
 
+print "Commit head: "
 
 
     
