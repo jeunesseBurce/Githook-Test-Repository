@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#Script for post-receive hook
+
+GIT_WORK_TREE="https://github.com/jeunesseBurce/Githook-Test-Repository"
+export GIT_WORK_TREE
+git checkout -f

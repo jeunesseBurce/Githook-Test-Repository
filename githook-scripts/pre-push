@@ -1,3 +1,5 @@
+#!/bin/sh
+
 remote="$1"
 url="$2"
 
@@ -22,9 +24,10 @@ do
 
         # Check for WIP commit
         commit=`git rev-list -n 1 --grep '^TEST' "$range"`
-        if [ -n "$commit" ]
+        if [ -n "$commit" ] 
         then
             echo "Not pushing in $local_ref, since commit message contains TEST"
+            echo "Try to push again, without using the keyword TEST"
             exit 1
         fi
     fi
