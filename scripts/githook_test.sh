@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #This script will download the zip file from the Github Repository
 #Convert this script in windows, using the command dos2unix (This will also remove all the carriage returns %0D)
 

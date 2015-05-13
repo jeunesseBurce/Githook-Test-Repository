@@ -1,0 +1,3 @@
+Inside a linux shell run the ff. commands: 
+    chmod +x <directory> to make it executable
+    chmod 0777 <directory> to gain permissions
